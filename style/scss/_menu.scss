@@ -1,0 +1,35 @@
+/* Configeuratoin of the menu of the header */
+
+nav {
+  @include flexbox;
+  @include flex-wrap(wrap);
+  @include flex-direction(row);
+  @include justify-content(space-between);
+  margin: 0 auto;
+  width: 80%;
+
+  a.title {
+    font-size: $text-size;
+    color: $primary-color;
+  }
+}
+
+
+li {
+  margin-left: 2.5rem;
+  font-size: $menu-left-text;
+
+  a.source-btn {
+    @include blue-button($primary-color);
+    margin-left: -0.5rem;
+  }
+
+  a.source-btn:hover {
+    @include blue-button-hover($btn-hover-color);
+  }
+}
+
+li:hover {
+  cursor: pointer;
+  color: $primary-color;
+}

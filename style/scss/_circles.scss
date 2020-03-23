@@ -1,0 +1,45 @@
+/* Implementation of the circles in page's header*/
+
+@mixin circle($width, $height) {
+  height: $height;
+  width: $width;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid $primary-color;
+}
+
+.circle-1-left {
+    @include circle(90px, 90px);
+    left: -50px;
+}
+
+.circle-2-left {
+    @include circle(70px, 70px);
+    left: 100px;
+    top: 100px;
+}
+
+.circle-3-left {
+    @include circle(50px, 50px);
+    left: 30px;
+    top: 250px;
+    z-index: -1;
+}
+
+.circle-1-right {
+    @include circle(70px, 70px);
+    right: 100px;
+    top: 200px;
+}
+
+.circle-2-right {
+    @include circle(50px, 50px);
+    right: 70px;
+    top: 350px;
+}
+
+.circle-3-right {
+    @include circle(30px, 30px);
+    right: 150px;
+    top: 450px;
+}

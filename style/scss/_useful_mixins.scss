@@ -1,0 +1,56 @@
+/* Useful mixins for the whole page */
+
+@mixin transform-rotate($value) {
+  transform: rotate($value);
+  -ms-transform: rotate($value);
+  -webkit-transform: rotate($value);
+  -moz-transform: rotate($value);
+}
+
+@mixin transform-scale($value) {
+  transform: scale($value);
+  -ms-transform: scale($value);
+  -webkit-transform: scale($value);
+  -moz-transform: scale($value);
+}
+
+@mixin animation ($delay, $duration, $animation, $in-count: 1, $direction: forward, $fillmode: fowards) {
+    -webkit-animation-delay: $delay;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-name: $animation;
+    -webkit-animation-fill-mode: $fillmode;
+    -webkit-animation-direction: $direction;
+    -webkit-animation-iteration-count: $in-count;
+
+    -moz-animation-delay: $delay;
+    -moz-animation-duration: $duration;
+    -moz-animation-name: $animation;
+    -moz-animation-fill-mode: $fillmode;
+    -moz-animation-direction: $direction;
+    -moz-animation-iteration-count: $in-count;
+
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-name: $animation;
+    animation-fill-mode: $fillmode;
+    animation-direction: $direction;
+    animation-iteration-count: $in-count;
+}
+
+@mixin keyframe ($animation_name) {
+    @-webkit-keyframes #{$animation_name} {
+        @content;
+    }
+
+    @-moz-keyframes #{$animation_name} {
+        @content;
+    }
+
+    @-o-keyframes #{$animation_name} {
+        @content;
+    }
+
+    @keyframes #{$animation_name} {
+        @content;
+    }
+}

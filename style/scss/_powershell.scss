@@ -1,0 +1,94 @@
+/* Configeuratoin of the powershell window of the header */
+
+header .powershell-window {
+  display: inline-block;
+  border: 1px solid $primary-color;
+  width: 500px;
+  height: 300px;
+  right: 50px;
+  margin-top: 5rem;
+  background: $primary-color;
+  border-radius: 1rem;
+  position: relative;
+  margin-left: 10rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+
+  .bar {
+
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    ul {
+      display: inline;
+
+      li {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-top: 0.5rem;
+        cursor: default;
+      }
+
+      li.circle-exit {
+        margin-left: 1rem;
+        background-color: $color-red;
+      }
+
+      li.circle-resize {
+        margin-left: 2rem;
+        background-color: $color-yellow;
+      }
+
+      li.circle-minimize {
+        margin-left: 3rem;
+        background-color: $color-green;
+      }
+    }
+
+    p.window-title {
+      text-align: center;
+      color: $white-color;
+      right: 200px;
+    }
+
+    p.window-title::selection {
+      background-color: $selection-color;
+    }
+  }
+
+  .bar::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #82AFD3;
+    top: 40px;
+    left: 0;
+  }
+
+  .commands {
+    font-size: $powershell-text;
+    margin-top: 2.1rem;
+    margin-left: 2rem;
+
+    p {
+      margin-bottom: 0.5rem;
+      color: $white-color;
+    }
+
+    p::selection {
+      background-color: $selection-color;
+    }
+
+    .bottom-window {
+      margin-top: 2rem;
+    }
+
+    .username-window, .password-window, .full-path, .wait-login, .o-folder {
+      display: none;
+    }
+  }
+}

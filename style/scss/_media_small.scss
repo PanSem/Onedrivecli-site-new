@@ -1,0 +1,85 @@
+/* Adjust page for small size screens */
+
+@media(max-width:620px) {
+  header {
+
+    .main-header {
+
+      .circle-2-left {
+          @include circle(50px, 50px);
+          left: 100px;
+          top: 100px;
+      }
+
+      .circle-3-left {
+          @include circle(30px, 30px);
+          left: 30px;
+          top: 200px;
+          z-index: -1;
+      }
+    }
+  }
+
+  section.download {
+
+    .download-container {
+
+      .download-text {
+
+        p {
+          font-size: $download-text-size-620px;
+        }
+      }
+
+      .download-code-container {
+
+        .download-code {
+
+          i.fa-copy {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  section.about {
+
+    .about-container {
+
+      p.about-description {
+        font-size: $about-text-620px;
+      }
+    }
+  }
+}
+
+@media(max-width:450px) {
+  section.download {
+
+    .download-container {
+
+      .download-text {
+
+        h2 {
+          font-size: $downwload-title-420px;
+        }
+      }
+
+      .download-code-container {
+
+        .download-code {
+          width: 100%;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+
+  section.about {
+
+    .about-container {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+/* General configuration about all the page */
+
+@import 'config';
+@import 'flex_mixins';
+@import 'buttons';
+@import 'useful_mixins';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: $white-color;
+  font-family: $font-stack;
+  line-height: 1.5;
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+
+ul{
+  text-decoration: none;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  display: inline;
+}

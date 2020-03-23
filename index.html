@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="./js/main.js" charset="utf-8"></script>
+  <title>Onedrivecli</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" class="title">Onedrivecli</a>
+      <ul>
+        <li class="mn-download">Download</li>
+        <li class="mn-about">About</li>
+        <li><a href="https://github.com/PanSem/onedrivecli" class="source-btn">Source Code</a></li>
+      </ul>
+    </nav>
+    <div class="main-header">
+      <div class="circle-1-left"></div>
+      <div class="circle-2-left"></div>
+      <div class="circle-3-left"></div>
+      <div class="circle-1-right"></div>
+      <div class="circle-2-right"></div>
+      <div class="circle-3-right"></div>
+      <div class="onedrivecli-cloud">
+        <img src="./image/Lg.png" alt="">
+        <h1>Onedrive in command line</h1>
+        <p>Use the command line to organize your cloud faster.</p>
+        <div class="header-btn">
+          <a href="#" class="download-btn">Download</a>
+          <a href="#" class="learn-btn">Learn More</a>
+        </div>
+      </div>
+      <div class="powershell-window">
+        <div class="bar">
+          <ul>
+            <li class="circle-exit"></li>
+            <li class="circle-resize"></li>
+            <li class="circle-minimize"></li>
+          </ul>
+          <p class="window-title">Powershell</p>
+        </div>
+        <div class="commands">
+          <p class="start-cli">PS C:\Windows\system32> <span class="ps-onedrivecli"></span></p>
+          <p class="username-window">Enter username: <span class="ps-username"></span></p>
+          <p class="password-window">Enter password: <span class="ps-password"></span></p>
+          <p class="full-path">Enter full path for download dir: <span class="ps-path"></span></p>
+          <div class="bottom-window">
+            <p class="wait-login">Wait untill login...</p>
+            <p class="o-folder">onedrive_folder></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="download">
+    <div class="download-container">
+      <div class="download-text">
+        <h2>Download</h2>
+        <p>Click in the rectangle to copy and then paste the code in the terminal and you are ready to go.
+          The terminal must have administration rights to work properly.</p>
+      </div>
+      <div class="download-code-container">
+        <div class="download-code">
+          <i class="far fa-copy"></i>
+          <p class="download-onedrivecli-title">Onedrivecli</p>
+          <p class="download-link"><span class="iex">iex</span> (<span class="iex">new-object</span> net.webclient).downloadstring
+              (<span class="https">'https://raw.githubusercontent.com/PanSem
+              /onedrivecli-site/master/install.ps1'</span>)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="about-container">
+      <p class="about-title">What it's all about</p>
+        <div class="ab-terminal mySlides">
+          <p class="about-icon"><i class="fas fa-terminal"></i></p>
+          <p class="about-description">You can do almost everything you want from your terminal with just one
+            simple command.</p>
+        </div>
+        <div class="ab-code mySlides">
+          <p class="about-icon"><i class="fas fa-code"></i></p>
+          <p class="about-description">You can download the code and use it in your programs. Just download it from github.</p>
+        </div>
+        <div class="ab-github mySlides">
+          <p class="about-icon"><i class="fab fa-github-alt"></i></i></p>
+          <p class="about-description">All the code can be found in Github. If you think that you have any good ideas,
+            feel free to contribute.</p>
+        </div>
+      <div class="about-all-dot">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>© 2019 Designed and Developed by Pan Sem.</p>
+  </footer>
+</body>
+</html>

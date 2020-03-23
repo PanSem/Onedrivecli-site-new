@@ -1,0 +1,65 @@
+/* Configuration of the about section */
+
+section.about {
+  z-index: 10;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -12rem;
+  position: relative;
+
+  .about-container {
+    width: 80%;
+    margin: 0 auto;
+    height: 300px;
+    border: 1px solid $dot-color-inactive;
+    border-radius: 0.2rem;
+    text-align: center;
+    background-color: $white-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    p.about-title {
+      font-size: $about-title-text;
+      color: $about-title-color;
+      margin-top: 0.5rem;
+    }
+
+    i.fa-terminal, .fa-code, .fa-github-alt {
+      font-size: 3rem;
+      color: $primary-color;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    p.about-description {
+      font-size: $code-text;
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .ab-code, .ab-github {
+      display: none;
+    }
+
+    .about-all-dot {
+      text-align: center;
+    }
+
+    .dot {
+      cursor: pointer;
+      height: $dot-size;
+      width: $dot-size;
+      margin: 2rem 5px;
+      background-color: $dot-color-inactive;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .dot.active {
+      background-color: $primary-color;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+/* Configeuratoin of the text of the header */
+
+header .onedrivecli-cloud {
+
+  margin-top: 10rem;
+  // margin-right: 5rem;
+
+  img {
+    width: 200px;
+    height: 112px;
+    display: none;
+    // margin-left: 5rem;
+  }
+
+  h1 {
+    font-size: $header-section-title-size;
+  }
+
+  p {
+    font-size: $text-size;
+    margin-bottom: 2rem;
+    margin-left: 0.3rem;
+    // text-align: center;
+  }
+
+  .header-btn {
+    margin-top: 1rem;
+    margin-left: 0.3rem;
+    // margin-left: 4.5rem;
+
+    .download-btn {
+      @include blue-button($primary-color);
+      margin-right: 1rem;
+    }
+
+    .download-btn:hover {
+      @include blue-button-hover($btn-hover-color);
+    }
+
+    .learn-btn {
+      @include blue-button($primary-color);
+    }
+
+    .learn-btn:hover {
+      @include blue-button-hover($btn-hover-color);
+    }
+  }
+}

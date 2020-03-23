@@ -1,0 +1,14 @@
+/* Implementation of the button using mixin */
+
+@mixin blue-button($color) {
+  padding: 1rem 2rem;
+  font-size: $text-size;
+  background-color: $color;
+  color: $white-color;
+  border-radius: 0.3rem;
+}
+
+@mixin blue-button-hover($color) {
+  background-color: $color;
+  border-color: $color;
+}

@@ -1,0 +1,93 @@
+/* Adjust page for medium size screens */
+
+@media(max-width:1145px) {
+  header {
+
+    .onedrivecli-cloud {
+      text-align: center;
+
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+      .powershell-window {
+        display: none;
+      }
+  }
+}
+
+@media(max-width:900px) {
+  section.download {
+
+    .download-container {
+
+      .download-text {
+
+        h2 {
+          font-size: $downwload-title-900px;
+        }
+
+        p {
+          width: 80%;
+        }
+      }
+
+      .download-code-container {
+
+        .download-text {
+          margin-top: 11rem;
+        }
+
+        .download-code {
+
+          p.download-link {
+            font-size: $code-text-900px;
+          }
+        }
+      }
+    }
+  }
+
+  section.about {
+    .about-container {
+
+      p.about-description {
+        font-size: $about-text-900px;
+      }
+    }
+  }
+}
+
+@media(max-width:750px) {
+  header {
+
+    nav {
+      display: none;
+    }
+
+    .main-header {
+
+      .circle-1-right, .circle-2-right, .circle-3-right {
+        display: none;
+      }
+    }
+  }
+
+  section.download {
+
+    .download-container {
+
+      .download-code-container {
+
+        .download-code {
+
+          p.download-link {
+            font-size: $code-text-750px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,735 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+
+ul {
+  text-decoration: none;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  display: inline;
+}
+
+/* Header of the page */
+/* Configeuratoin of the menu of the header */
+nav {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+}
+nav a.title {
+  font-size: 0.9rem;
+  color: #0078D7;
+}
+
+li {
+  margin-left: 2.5rem;
+  font-size: 0.8rem;
+}
+li a.source-btn {
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  background-color: #0078D7;
+  color: #FFFFFF;
+  border-radius: 0.3rem;
+  margin-left: -0.5rem;
+}
+li a.source-btn:hover {
+  background-color: #005EA9;
+  border-color: #005EA9;
+}
+
+li:hover {
+  cursor: pointer;
+  color: #0078D7;
+}
+
+/* Configeuratoin of the powershell window of the header */
+header .powershell-window {
+  display: inline-block;
+  border: 1px solid #0078D7;
+  width: 500px;
+  height: 300px;
+  right: 50px;
+  margin-top: 5rem;
+  background: #0078D7;
+  border-radius: 1rem;
+  position: relative;
+  margin-left: 10rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+header .powershell-window .bar {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+header .powershell-window .bar ul {
+  display: inline;
+}
+header .powershell-window .bar ul li {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 0.5rem;
+  cursor: default;
+}
+header .powershell-window .bar ul li.circle-exit {
+  margin-left: 1rem;
+  background-color: #D75A5A;
+}
+header .powershell-window .bar ul li.circle-resize {
+  margin-left: 2rem;
+  background-color: #D7CA5A;
+}
+header .powershell-window .bar ul li.circle-minimize {
+  margin-left: 3rem;
+  background-color: #5CD75A;
+}
+header .powershell-window .bar p.window-title {
+  text-align: center;
+  color: #FFFFFF;
+  right: 200px;
+}
+header .powershell-window .bar p.window-title::selection {
+  background-color: #D74F00;
+}
+header .powershell-window .bar::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #82AFD3;
+  top: 40px;
+  left: 0;
+}
+header .powershell-window .commands {
+  font-size: 0.9rem;
+  margin-top: 2.1rem;
+  margin-left: 2rem;
+}
+header .powershell-window .commands p {
+  margin-bottom: 0.5rem;
+  color: #FFFFFF;
+}
+header .powershell-window .commands p::selection {
+  background-color: #D74F00;
+}
+header .powershell-window .commands .bottom-window {
+  margin-top: 2rem;
+}
+header .powershell-window .commands .username-window, header .powershell-window .commands .password-window, header .powershell-window .commands .full-path, header .powershell-window .commands .wait-login, header .powershell-window .commands .o-folder {
+  display: none;
+}
+
+/* Configeuratoin of the text of the header */
+header .onedrivecli-cloud {
+  margin-top: 10rem;
+}
+header .onedrivecli-cloud img {
+  width: 200px;
+  height: 112px;
+  display: none;
+}
+header .onedrivecli-cloud h1 {
+  font-size: 2.5rem;
+}
+header .onedrivecli-cloud p {
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  margin-left: 0.3rem;
+}
+header .onedrivecli-cloud .header-btn {
+  margin-top: 1rem;
+  margin-left: 0.3rem;
+}
+header .onedrivecli-cloud .header-btn .download-btn {
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  background-color: #0078D7;
+  color: #FFFFFF;
+  border-radius: 0.3rem;
+  margin-right: 1rem;
+}
+header .onedrivecli-cloud .header-btn .download-btn:hover {
+  background-color: #005EA9;
+  border-color: #005EA9;
+}
+header .onedrivecli-cloud .header-btn .learn-btn {
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  background-color: #0078D7;
+  color: #FFFFFF;
+  border-radius: 0.3rem;
+}
+header .onedrivecli-cloud .header-btn .learn-btn:hover {
+  background-color: #005EA9;
+  border-color: #005EA9;
+}
+
+/* Implementation of the circles in page's header*/
+.circle-1-left {
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #0078D7;
+  left: -50px;
+}
+
+.circle-2-left {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #0078D7;
+  left: 100px;
+  top: 100px;
+}
+
+.circle-3-left {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #0078D7;
+  left: 30px;
+  top: 250px;
+  z-index: -1;
+}
+
+.circle-1-right {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #0078D7;
+  right: 100px;
+  top: 200px;
+}
+
+.circle-2-right {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #0078D7;
+  right: 70px;
+  top: 350px;
+}
+
+.circle-3-right {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #0078D7;
+  right: 150px;
+  top: 450px;
+}
+
+header {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.main-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+/* Configuration of the download section */
+section.download {
+  background-color: #0078D7;
+  color: #FFFFFF;
+  margin-top: 5rem;
+  height: 600px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+section.download .download-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+section.download .download-container .download-text {
+  width: 50%;
+  margin-top: 10rem;
+}
+section.download .download-container .download-text h2 {
+  font-size: 2.5rem;
+}
+section.download .download-container .download-text h2::selection {
+  background-color: #D74F00;
+}
+section.download .download-container .download-text p {
+  font-size: 0.9rem;
+  width: 70%;
+}
+section.download .download-container .download-text p::selection {
+  background-color: #D74F00;
+}
+section.download .download-container .download-code-container {
+  width: 50%;
+  margin-top: 10rem;
+  text-align: center;
+}
+section.download .download-container .download-code-container .download-code {
+  border: 1px solid #2C2A2A;
+  border-radius: 0.3rem;
+  width: 80%;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+section.download .download-container .download-code-container .download-code p.download-onedrivecli-title {
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+section.download .download-container .download-code-container .download-code i.fa-copy {
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  font-size: 1.2rem;
+}
+section.download .download-container .download-code-container .download-code p.download-onedrivecli-title::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #2C2A2A;
+  top: 40px;
+  left: 0;
+}
+section.download .download-container .download-code-container .download-code p.download-link {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+section.download .download-container .download-code-container .download-code span.iex {
+  color: #FF0B0B;
+}
+section.download .download-container .download-code-container .download-code span.https {
+  color: #FFA700;
+}
+section.download .download-container .download-code-container .download-code p::selection {
+  background-color: #D74F00;
+}
+section.download .download-container .download-code-container .download-code span::selection {
+  background-color: #D74F00;
+}
+section.download .download-container .download-code-container:not(:active) {
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: example;
+  -webkit-animation-fill-mode: fowards;
+  -webkit-animation-direction: forward;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 1s;
+  -moz-animation-name: example;
+  -moz-animation-fill-mode: fowards;
+  -moz-animation-direction: forward;
+  -moz-animation-iteration-count: 1;
+  animation-delay: 0;
+  animation-duration: 1s;
+  animation-name: example;
+  animation-fill-mode: fowards;
+  animation-direction: forward;
+  animation-iteration-count: 1;
+}
+@-webkit-keyframes example {
+  0% {
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+  }
+  25% {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+}
+@-moz-keyframes example {
+  0% {
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+  }
+  25% {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+}
+@-o-keyframes example {
+  0% {
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+  }
+  25% {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+}
+@keyframes example {
+  0% {
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+  }
+  25% {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+}
+
+section.download::before {
+  content: " ";
+  width: 120%;
+  left: -10%;
+  height: 150px;
+  background: #FFFFFF;
+  position: absolute;
+  top: -70px;
+  transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+}
+
+section.download::after {
+  content: " ";
+  width: 120%;
+  left: -10%;
+  height: 150px;
+  background: #FFFFFF;
+  position: absolute;
+  bottom: -70px;
+  transform: rotate(-4deg);
+  -ms-transform: rotate(-4deg);
+  -webkit-transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg);
+}
+
+/* Configuration of the about section */
+section.about {
+  z-index: 10;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -12rem;
+  position: relative;
+}
+section.about .about-container {
+  width: 80%;
+  margin: 0 auto;
+  height: 300px;
+  border: 1px solid #BBBBBB;
+  border-radius: 0.2rem;
+  text-align: center;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+section.about .about-container p.about-title {
+  font-size: 0.8rem;
+  color: #9C9CB0;
+  margin-top: 0.5rem;
+}
+section.about .about-container i.fa-terminal, section.about .about-container .fa-code, section.about .about-container .fa-github-alt {
+  font-size: 3rem;
+  color: #0078D7;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+section.about .about-container p.about-description {
+  font-size: 1.2rem;
+  width: 70%;
+  margin: 0 auto;
+}
+section.about .about-container .ab-code, section.about .about-container .ab-github {
+  display: none;
+}
+section.about .about-container .about-all-dot {
+  text-align: center;
+}
+section.about .about-container .dot {
+  cursor: pointer;
+  height: 0.7rem;
+  width: 0.7rem;
+  margin: 2rem 5px;
+  background-color: #BBBBBB;
+  border-radius: 50%;
+  display: inline-block;
+}
+section.about .about-container .dot.active {
+  background-color: #0078D7;
+}
+
+/* Footer of the page */
+footer {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+footer p {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Adjust page for medium size screens */
+@media (max-width: 1145px) {
+  header .onedrivecli-cloud {
+    text-align: center;
+  }
+  header .onedrivecli-cloud img {
+    display: block;
+    margin: 0 auto;
+  }
+  header .powershell-window {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  section.download .download-container .download-text h2 {
+    font-size: 2rem;
+  }
+  section.download .download-container .download-text p {
+    width: 80%;
+  }
+  section.download .download-container .download-code-container .download-text {
+    margin-top: 11rem;
+  }
+  section.download .download-container .download-code-container .download-code p.download-link {
+    font-size: 0.7rem;
+  }
+
+  section.about .about-container p.about-description {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 750px) {
+  header nav {
+    display: none;
+  }
+  header .main-header .circle-1-right, header .main-header .circle-2-right, header .main-header .circle-3-right {
+    display: none;
+  }
+
+  section.download .download-container .download-code-container .download-code p.download-link {
+    font-size: 0.4rem;
+  }
+}
+/* Adjust page for small size screens */
+@media (max-width: 620px) {
+  header .main-header .circle-2-left {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #0078D7;
+    left: 100px;
+    top: 100px;
+  }
+  header .main-header .circle-3-left {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #0078D7;
+    left: 30px;
+    top: 200px;
+    z-index: -1;
+  }
+
+  section.download .download-container .download-text p {
+    font-size: 0.7rem;
+  }
+  section.download .download-container .download-code-container .download-code i.fa-copy {
+    display: none;
+  }
+
+  section.about .about-container p.about-description {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 450px) {
+  section.download .download-container .download-text h2 {
+    font-size: 1.7rem;
+  }
+  section.download .download-container .download-code-container .download-code {
+    width: 100%;
+    margin-left: 0.5rem;
+  }
+
+  section.about .about-container {
+    width: 100%;
+  }
+}

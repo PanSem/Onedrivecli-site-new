@@ -1,0 +1,24 @@
+/* Header of the page */
+
+@import 'menu';
+@import 'powershell';
+@import 'presentation';
+@import 'circles';
+
+header {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  @include flexbox;
+  @include flex-wrap(wrap);
+  @include flex-direction(row);
+  @include justify-content(space-between);
+}
+
+.main-header {
+  width: 100%;
+  @include flexbox;
+  @include flex-wrap(wrap);
+  @include flex-direction(row);
+  @include justify-content(center);
+}
